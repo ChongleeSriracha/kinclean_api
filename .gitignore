@@ -67,3 +67,6 @@ docker-compose.override.yml
 
 # Local environment override for Docker Compose
 docker-compose.override.yml
+
+
+.token
