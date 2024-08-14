@@ -1,14 +1,8 @@
 ## API SPEC ###
 node v18.12.1
 npm  v8.19.2
-### How to start ###
+### Install project with npm###
 
-npm init
-npm install express
-npm install pg
-
-
-
-
-
-error json config file 
+  npm run install
+  npm run migrate
+  npm run seed:all
