@@ -6,3 +6,9 @@ npm  v8.19.2
 npm init
 npm install express
 npm install pg
+
+
+
+
+
+error json config file 
