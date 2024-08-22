@@ -10,38 +10,38 @@ module.export = sequelize.define(
       type: Sequelize.INTEGER,
       autoIncrement: true,
       primaryKey: true,
-      allowNull: false,
+      allowNull: false
     },
     PromotionName: {
       type: Sequelize.STRING(100),
-      allowNull: false,
+      allowNull: false
     },
     Description: {
       type: Sequelize.TEXT,
-      allowNull: true,
+      allowNull: true
     },
     DiscountPercentage: {
       type: Sequelize.FLOAT(5, 2),
-      allowNull: true,
+      allowNull: true
     },
     StartDate: {
       type: Sequelize.DATE,
-      allowNull: true,
+      allowNull: true
     },
     EndDate: {
       type: Sequelize.DATE,
-      allowNull: true,
+      allowNull: true
     },
     createdAt: {
       type: Sequelize.DATE,
       allowNull: false,
-      defaultValue: Sequelize.literal("NOW()"),
+      defaultValue: Sequelize.literal('NOW()')
     },
     updatedAt: {
       type: Sequelize.DATE,
       allowNull: false,
-      defaultValue: Sequelize.literal("NOW()"),
-    },
+      defaultValue: Sequelize.literal('NOW()')
+    }
   },
   {
     paranoid: true,

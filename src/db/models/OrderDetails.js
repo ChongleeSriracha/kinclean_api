@@ -10,45 +10,45 @@ module.exports = sequelize.define(
       type: Sequelize.INTEGER,
       autoIncrement: true,
       primaryKey: true,
-      allowNull: false,
+      allowNull: false
     },
     OrderID: {
       type: Sequelize.INTEGER,
       allowNull: false,
       references: {
-        model: "Orders",
-        key: "OrderID",
+        model: 'Orders',
+        key: 'OrderID'
       },
-      onUpdate: "CASCADE",
-      onDelete: "CASCADE",
+      onUpdate: 'CASCADE',
+      onDelete: 'CASCADE'
     },
     FoodID: {
       type: Sequelize.INTEGER,
       allowNull: false,
       references: {
-        model: "Foods",
-        key: "FoodID",
+        model: 'Foods',
+        key: 'FoodID'
       },
-      onUpdate: "CASCADE",
-      onDelete: "CASCADE",
+      onUpdate: 'CASCADE',
+      onDelete: 'CASCADE'
     },
     Quantity: {
       type: Sequelize.INTEGER,
-      allowNull: false,
+      allowNull: false
     },
     Subtotal: {
       type: Sequelize.FLOAT(10, 2),
-      allowNull: false,
+      allowNull: false
     },
     createdAt: {
       type: Sequelize.DATE,
       allowNull: false,
-      defaultValue: Sequelize.literal("NOW()"),
+      defaultValue: Sequelize.literal('NOW()')
     },
     updatedAt: {
       type: Sequelize.DATE,
       allowNull: false,
-      defaultValue: Sequelize.literal("NOW()"),
+      defaultValue: Sequelize.literal('NOW()')
     },
   },
   {

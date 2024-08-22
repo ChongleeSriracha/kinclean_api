@@ -9,33 +9,49 @@ module.exports = sequelize.define(
       type: Sequelize.INTEGER,
       autoIncrement: true,
       primaryKey: true,
-      allowNull: false,
+      allowNull: false
     },
     FoodName: {
       type: Sequelize.STRING(100),
-      allowNull: false,
+      allowNull: false
     },
     Description: {
       type: Sequelize.TEXT,
-      allowNull: true,
+      allowNull: true
+    },
+    Calories: {
+      type: Sequelize.FLOAT,
+      allowNull: true
+    },
+    CookingTime: {
+      type: Sequelize.INTEGER,
+      allowNull: true
+    },
+    CanEaten: {
+      type: Sequelize.STRING(50),
+      allowNull: true
+    },
+    Star: {
+      type: Sequelize.FLOAT(5, 2),
+      allowNull: true
     },
     Price: {
       type: Sequelize.FLOAT(10, 2),
-      allowNull: false,
+      allowNull: false
     },
     Category: {
       type: Sequelize.STRING(50),
-      allowNull: true,
+      allowNull: true
     },
     createdAt: {
       type: Sequelize.DATE,
       allowNull: false,
-      defaultValue: Sequelize.literal("NOW()"),
+      defaultValue: Sequelize.literal('NOW()')
     },
     updatedAt: {
       type: Sequelize.DATE,
       allowNull: false,
-      defaultValue: Sequelize.literal("NOW()"),
+      defaultValue: Sequelize.literal('NOW()')
     },
   },
   {
